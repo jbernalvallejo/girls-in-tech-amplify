@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-girlsintech-dev-201811-authRole",
+      "UnauthRoleArn": "arn:aws:iam::989151165136:role/amplify-girlsintech-dev-201811-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::989151165136:role/amplify-girlsintech-dev-201811-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-girlsintech-dev-201811-deployment",
+      "UnauthRoleName": "amplify-girlsintech-dev-201811-unauthRole",
+      "StackName": "amplify-girlsintech-dev-201811",
+      "StackId": "arn:aws:cloudformation:eu-west-2:989151165136:stack/amplify-girlsintech-dev-201811/c2274950-5e07-11ed-b3b6-0284f03fa848",
+      "AmplifyAppId": "d3g7q72951y1jn"
+    },
+    "categories": {
+      "api": {
+        "girlsintech": {}
+      }
+    }
+  }
+}
