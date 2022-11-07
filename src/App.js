@@ -7,17 +7,21 @@ import { Flex, Collection, Card, Badge, Heading } from '@aws-amplify/ui-react';
 
 import ReactMarkdown from 'react-markdown';
 
+import {withAuthenticator} from '@aws-amplify/ui-react';
+
 function App() {
-  const [courses, setCourses] = useState([])
+  const [courses, setCourses] = useState([]);
+  
   useEffect(() => {
     fetchCourses();
   }, []);
+
   async function fetchCourses() {
     try {
      const response = await API.graphql({ query: listCourses });
-     setCourses(response.data.listCourses.items)
+     setCourses(response.data.listCourses.items);
     } catch (err) {
-      console.log({ err })
+      console.log({ err });
     }
   }
 
@@ -44,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
